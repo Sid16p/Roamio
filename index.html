@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roamio - Discover the World</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="index.html">
+                <i class="fas fa-globe-americas me-2"></i>Roamio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tips.html">Tips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1 class="hero-title mb-4">Discover the World, One Trip at a Time</h1>
+                        <p class="hero-subtitle mb-5">Inspiring your next journey since 2025. Explore breathtaking destinations, get insider tips, and create memories that last a lifetime.</p>
+                        <a href="destinations.html" class="btn btn-primary btn-lg cta-button">
+                            <i class="fas fa-map-marked-alt me-2"></i>Explore Destinations
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Destinations Preview -->
+    <section class="destinations-preview py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Featured Destinations</h2>
+                    <p class="section-subtitle">Handpicked locations that will take your breath away</p>
+                </div>
+            </div>
+            <div class="row g-4" id="featured-destinations">
+                <!-- Featured destinations will be loaded here by JavaScript -->
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <a href="destinations.html" class="btn btn-outline-primary btn-lg">
+                        View All Destinations <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Why Travel With Roamio?</h2>
+                    <p class="section-subtitle">What makes us your perfect travel companion</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card text-center h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-map-signs"></i>
+                        </div>
+                        <h4>Expert Guidance</h4>
+                        <p>Detailed travel guides from experienced travelers who have explored over 50 countries worldwide.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card text-center h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h4>Hidden Gems</h4>
+                        <p>Discover secret spots and local favorites that most tourists never see, curated by local experts.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card text-center h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <h4>Budget Friendly</h4>
+                        <p>Comprehensive guides for every budget, from backpacker tips to luxury recommendations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Tips -->
+    <section class="featured-tips py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Travel Smart</h2>
+                    <p class="section-subtitle">Essential tips from seasoned travelers</p>
+                </div>
+            </div>
+            <div class="row g-4" id="featured-tips">
+                <!-- Featured tips will be loaded here by JavaScript -->
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <a href="tips.html" class="btn btn-outline-secondary btn-lg">
+                        View All Tips <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h2 class="text-white mb-4">Ready to Start Your Next Adventure?</h2>
+                    <p class="text-white-50 mb-4">Join thousands of travelers who trust Roamio for their journey planning</p>
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+                        <a href="destinations.html" class="btn btn-light btn-lg">
+                            <i class="fas fa-search me-2"></i>Browse Destinations
+                        </a>
+                        <a href="contact.html" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-envelope me-2"></i>Get in Touch
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="mb-3">
+                        <i class="fas fa-globe-americas me-2"></i>Roamio
+                    </h5>
+                    <p class="text-white-50">Your trusted companion for discovering the world's most amazing destinations and creating unforgettable memories.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+                        <li><a href="destinations.html" class="text-white-50 text-decoration-none">Destinations</a></li>
+                        <li><a href="tips.html" class="text-white-50 text-decoration-none">Tips</a></li>
+                        <li><a href="about.html" class="text-white-50 text-decoration-none">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="mb-3">Categories</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none">Beach</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Mountains</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Cities</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Adventure</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="mb-3">Contact Info</h6>
+                    <p class="text-white-50 mb-2">
+                        <i class="fas fa-envelope me-2"></i>hello@roamio.com
+                    </p>
+                    <p class="text-white-50 mb-2">
+                        <i class="fas fa-phone me-2"></i>+1 (555) 123-4567
+                    </p>
+                    <p class="text-white-50">
+                        <i class="fas fa-map-marker-alt me-2"></i>New York, NY
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-white-50 mb-0">&copy; 2025 Roamio. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/destinations.js"></script>
+    <script src="assets/js/tips.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

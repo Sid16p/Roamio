@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Details - Roamio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="index.html">
+                <i class="fas fa-globe-americas me-2"></i>Roamio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tips.html">Tips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Image -->
+    <section class="destination-hero" id="destination-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <a href="destinations.html" class="btn btn-outline-light mb-3">
+                            <i class="fas fa-arrow-left me-2"></i>Back to Destinations
+                        </a>
+                        <h1 class="display-3 text-white mb-3" id="destination-title">Loading...</h1>
+                        <p class="lead text-white-50" id="destination-location">
+                            <i class="fas fa-map-marker-alt me-2"></i>Loading...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destination Content -->
+    <section class="destination-content py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-8">
+                    <!-- Overview -->
+                    <div class="content-section mb-5">
+                        <h2 class="mb-4">Overview</h2>
+                        <p class="lead" id="destination-overview">Loading destination information...</p>
+                    </div>
+
+                    <!-- Best Time to Visit -->
+                    <div class="content-section mb-5">
+                        <h2 class="mb-4">
+                            <i class="fas fa-calendar-alt me-2 text-primary"></i>Best Time to Visit
+                        </h2>
+                        <div id="best-time-content">Loading...</div>
+                    </div>
+
+                    <!-- Things to Do -->
+                    <div class="content-section mb-5">
+                        <h2 class="mb-4">
+                            <i class="fas fa-list-ul me-2 text-primary"></i>Things to Do
+                        </h2>
+                        <div id="things-to-do-content">Loading...</div>
+                    </div>
+
+                    <!-- Where to Stay -->
+                    <div class="content-section mb-5">
+                        <h2 class="mb-4">
+                            <i class="fas fa-bed me-2 text-primary"></i>Where to Stay
+                        </h2>
+                        <div id="where-to-stay-content">Loading...</div>
+                    </div>
+
+                    <!-- Local Tips -->
+                    <div class="content-section mb-5">
+                        <h2 class="mb-4">
+                            <i class="fas fa-lightbulb me-2 text-primary"></i>Local Tips
+                        </h2>
+                        <div id="local-tips-content">Loading...</div>
+                    </div>
+
+                    <!-- Photo Gallery -->
+                    <div class="content-section mb-5">
+                        <h2 class="mb-4">
+                            <i class="fas fa-camera me-2 text-primary"></i>Photo Gallery
+                        </h2>
+                        <div class="row g-3" id="photo-gallery">
+                            <!-- Photos will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="destination-sidebar">
+                        <!-- Quick Facts -->
+                        <div class="card mb-4">
+                            <div class="card-header bg-primary text-white">
+                                <h5 class="mb-0">
+                                    <i class="fas fa-info-circle me-2"></i>Quick Facts
+                                </h5>
+                            </div>
+                            <div class="card-body" id="quick-facts">
+                                Loading...
+                            </div>
+                        </div>
+
+                        <!-- Related Destinations -->
+                        <div class="card">
+                            <div class="card-header bg-secondary text-white">
+                                <h5 class="mb-0">
+                                    <i class="fas fa-map me-2"></i>Similar Destinations
+                                </h5>
+                            </div>
+                            <div class="card-body" id="related-destinations">
+                                Loading...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Modal -->
+    <div class="modal fade" id="photoModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <img src="" alt="" class="img-fluid w-100" id="modalImage">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="mb-3">
+                        <i class="fas fa-globe-americas me-2"></i>Roamio
+                    </h5>
+                    <p class="text-white-50">Your trusted companion for discovering the world's most amazing destinations and creating unforgettable memories.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+                        <li><a href="destinations.html" class="text-white-50 text-decoration-none">Destinations</a></li>
+                        <li><a href="tips.html" class="text-white-50 text-decoration-none">Tips</a></li>
+                        <li><a href="about.html" class="text-white-50 text-decoration-none">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="mb-3">Categories</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none">Beach</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Mountains</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Cities</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Adventure</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="mb-3">Contact Info</h6>
+                    <p class="text-white-50 mb-2">
+                        <i class="fas fa-envelope me-2"></i>hello@roamio.com
+                    </p>
+                    <p class="text-white-50 mb-2">
+                        <i class="fas fa-phone me-2"></i>+91 98765 43210
+                    </p>
+                    <p class="text-white-50">
+                        <i class="fas fa-map-marker-alt me-2"></i>Mumbai, Maharashtra, India
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-white-50 mb-0">&copy; 2025 Roamio. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/destinations.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

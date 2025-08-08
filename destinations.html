@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Roamio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="index.html">
+                <i class="fas fa-globe-americas me-2"></i>Roamio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tips.html">Tips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center text-white">
+                    <h1 class="display-4 mb-3">Explore Destinations</h1>
+                    <p class="lead">Discover breathtaking places around the world</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter -->
+    <section class="search-filter py-4 bg-light">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-search"></i></span>
+                        <input type="text" class="form-control" id="searchInput" placeholder="Search destinations...">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <select class="form-select" id="categoryFilter">
+                        <option value="">All Categories</option>
+                        <option value="beach">Beach</option>
+                        <option value="mountain">Mountain</option>
+                        <option value="city">City</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="cultural">Cultural</option>
+                        <option value="romantic">Romantic</option>
+                        <option value="historical">Historical</option>
+                        <option value="winter">Winter</option>
+                        <option value="desert">Desert</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Filter Buttons -->
+            <div class="row mt-3">
+                <div class="col-12">
+                    <div class="filter-buttons">
+                        <button class="btn btn-outline-primary btn-sm active" data-filter="">All</button>
+                        <button class="btn btn-outline-primary btn-sm" data-filter="beach">Beach</button>
+                        <button class="btn btn-outline-primary btn-sm" data-filter="mountain">Mountain</button>
+                        <button class="btn btn-outline-primary btn-sm" data-filter="city">City</button>
+                        <button class="btn btn-outline-primary btn-sm" data-filter="adventure">Adventure</button>
+                        <button class="btn btn-outline-primary btn-sm" data-filter="cultural">Cultural</button>
+                        <button class="btn btn-outline-primary btn-sm" data-filter="romantic">Romantic</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Grid -->
+    <section class="destinations-grid py-5">
+        <div class="container">
+            <div class="row g-4" id="destinations-container">
+                <!-- Destinations will be loaded here by JavaScript -->
+            </div>
+            <div class="row mt-5" id="no-results" style="display: none;">
+                <div class="col-12 text-center">
+                    <i class="fas fa-search fa-3x text-muted mb-3"></i>
+                    <h4>No destinations found</h4>
+                    <p class="text-muted">Try adjusting your search or filter criteria</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="mb-3">
+                        <i class="fas fa-globe-americas me-2"></i>Roamio
+                    </h5>
+                    <p class="text-white-50">Your trusted companion for discovering the world's most amazing destinations and creating unforgettable memories.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+                        <li><a href="destinations.html" class="text-white-50 text-decoration-none">Destinations</a></li>
+                        <li><a href="tips.html" class="text-white-50 text-decoration-none">Tips</a></li>
+                        <li><a href="about.html" class="text-white-50 text-decoration-none">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="mb-3">Categories</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none">Beach</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Mountains</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Cities</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Adventure</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="mb-3">Contact Info</h6>
+                    <p class="text-white-50 mb-2">
+                        <i class="fas fa-envelope me-2"></i>hello@roamio.com
+                    </p>
+                    <p class="text-white-50 mb-2">
+                        <i class="fas fa-phone me-2"></i>+91 98765 43210
+                    </p>
+                    <p class="text-white-50">
+                        <i class="fas fa-map-marker-alt me-2"></i>Mumbai, Maharashtra, India
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-white-50 mb-0">&copy; 2025 Roamio. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/destinations.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

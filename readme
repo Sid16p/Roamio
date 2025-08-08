@@ -1,0 +1,60 @@
+# Overview
+
+Roamio is a static travel website designed to inspire and guide travelers in exploring destinations around the world. The site functions as a travel blog and resource hub, featuring detailed destination guides, practical travel tips, and company information. Built as a modern, responsive web application, it focuses on providing users with comprehensive travel information through an intuitive and visually appealing interface.
+
+# User Preferences
+
+Preferred communication style: Simple, everyday language.
+
+# System Architecture
+
+## Frontend Architecture
+
+The project follows a traditional multi-page static website architecture using vanilla HTML, CSS, and JavaScript. The design emphasizes simplicity and performance with the following key architectural decisions:
+
+**Static Site Structure**: The website is built using pure HTML files for each page (index.html, destinations.html, tips.html, about.html, contact.html, destination-details.html), eliminating the need for server-side rendering and enabling fast loading times.
+
+**Bootstrap CSS Framework**: The site leverages Bootstrap 5.3.0 for responsive grid layouts and components, ensuring consistent mobile-first design across all devices. This choice reduces custom CSS development time while providing reliable cross-browser compatibility.
+
+**Modular JavaScript Architecture**: JavaScript functionality is separated into logical modules:
+- `main.js` handles core site functionality (navigation, animations, form handling)
+- `destinations.js` manages destination data and filtering logic
+- `tips.js` contains travel tips content management
+
+**CSS Custom Properties**: The styling system uses CSS custom properties (variables) for consistent theming and easy maintenance of colors, gradients, and spacing throughout the site.
+
+## Content Management Strategy
+
+**Static Data Storage**: All content (destinations, travel tips, site content) is stored directly in JavaScript files as structured data objects. This approach was chosen for its simplicity and performance, avoiding the complexity of a backend database for content that changes infrequently.
+
+**Template-Based Rendering**: Dynamic content is rendered client-side using JavaScript template literals and DOM manipulation, allowing for consistent presentation of destinations and tips data.
+
+## Responsive Design Implementation
+
+The site uses a mobile-first approach with Bootstrap's responsive grid system, complemented by custom CSS media queries. The navigation transforms into a collapsible hamburger menu on smaller screens, and content layouts adapt from multi-column to single-column as needed.
+
+## Performance Optimization
+
+**CDN Integration**: External libraries (Bootstrap, Font Awesome) are loaded from CDNs to leverage caching and reduce server load.
+
+**Image Optimization**: The site uses external image services (Pixabay) with optimized URLs for different screen sizes and resolutions.
+
+**Lazy Loading**: JavaScript implements lazy loading for images and content to improve initial page load times.
+
+# External Dependencies
+
+## CSS Frameworks and Libraries
+- **Bootstrap 5.3.0**: Primary CSS framework for responsive layout and component styling
+- **Font Awesome 6.4.0**: Icon library for consistent iconography throughout the site
+
+## Development Tools
+- **http-server**: Local development server for testing static files
+- **live-server**: Development server with live reload functionality for faster development cycles
+
+## Content Resources
+- **Pixabay API**: External image service providing high-quality travel photography with optimized URLs for responsive images
+
+## Hosting Considerations
+The static nature of the site makes it compatible with various hosting solutions including GitHub Pages, Netlify, Vercel, or traditional web hosting providers. No server-side processing is required.
+
+Note: The current architecture uses static data storage in JavaScript files. This approach works well for the current scope but could be enhanced with a headless CMS or database integration for more dynamic content management in the future.
