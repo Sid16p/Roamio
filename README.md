@@ -101,13 +101,12 @@ The website is:
 - Story behind Roamio
 - Mission & vision
 - Why we love travel
-- Meet the team section (optional)
+- Meet the team section
 
 ---
 
 ### 7. **Contact Page**
 - Contact form (Name, Email, Message) with form validation
-- Location map (optional)
 - Social media links
 - Business email address
 
@@ -155,10 +154,10 @@ The website is:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/roamio.git
+git clone https://github.com/Sid16p/Roamio.git   
 
 # Navigate into project folder
-cd roamio
+cd Roamio
 
 # Start local server (using live-server or http-server)
 npx live-server
